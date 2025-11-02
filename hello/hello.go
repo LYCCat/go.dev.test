@@ -11,7 +11,7 @@ func main() {
 	//log.SetFlags(0) //不显示时间
 	log.SetFlags(0)
 
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("Gladys")
 
 	if err != nil {
 		log.Fatal(err)
