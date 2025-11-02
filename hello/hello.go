@@ -1,15 +1,12 @@
 package main
 
 import (
-	"example.com/greetings"
-	"fmt"
+	"log"
 )
-import "rsc.io/quote"
 
 func main() {
-	fmt.Println("hello world")
-	fmt.Println(quote.Go())
-	message := greetings.Hello("Gladys")
-	fmt.Println(message)
+	log.SetPrefix("greetings: ")
+	//log.SetFlags(0) //不显示时间
+	log.Println("Hello")
 
 }
